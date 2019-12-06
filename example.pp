@@ -4,6 +4,8 @@ node 'firs_database' {
   }
 }
 
-package { 'vim-enhanced':
-  ensure => 'present',
+node /puppet.*/ {
+  package { 'vim-enhanced':
+    ensure => 'present',
+  }
 }
